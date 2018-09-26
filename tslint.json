@@ -10,6 +10,8 @@
   "rules": {
     "interface-name": false,
     "member-access": false,
-    "member-ordering": false
+    "member-ordering": false,
+    "ordered-imports": false,
+    "import-sources-order": "any"
   }
 }

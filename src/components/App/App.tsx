@@ -1,3 +1,4 @@
+import * as cx from 'classnames';
 import * as React from 'react';
 import * as styles from './styles/App.scss';
 
@@ -22,10 +23,12 @@ export default class App extends React.Component<Props, State> {
   }
     
   public render() {
-    const {title} = styles;
     return (
       <h1 
-        className={title}
+        className={cx({
+          [styles.noSelect]: true,
+          [styles.title]: true
+        })}
         onClick={this.increment}
       >
         {this.props.title} {this.state.count}
